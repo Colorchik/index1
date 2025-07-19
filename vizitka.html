@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="style" href="./index.js">
+    <link rel="stylesheet" href="/style.css">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body  class="bg-secondary">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <header class="container-fluid bg-dark ">
+     <nav class="navbar  bg-dark sticky-top">
+  <div class="container-fluid ">
+    <div class="text-white fs-3"><span id="currentTime"></span></div>
+    
+        <script>
+  var timeElement = document.getElementById('currentTime');
+  setInterval(function () {
+    var currentTime = new Date();
+    timeElement.textContent = currentTime.toLocaleTimeString();
+  }, 1000);
+</script>
+    
+    <a class="navbar-brand text-white  fs-3 " href="#" >Добро пожаловать </a>
+    <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Переключить навигацию">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end bg-warning" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title fs-2" id="offcanvasNavbarLabel">Навигация</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Закрыть"></button>
+      </div>
+      <div class="offcanvas-body bg-warning">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active fs-3" aria-current="page" href="#Hel">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-3" href="./sil/index.html">Отсылочка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-3" href="https://en.wikipedia.org/wiki/Duck">Duck</a>
+          </li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+   <video src="./3176015-hd_1920_1080_25fps.mp4" class="object-fit-cover  w-100  h-100 z-n1 position-absolute" autoplay  loop ></video>
+   
+   <main class="d-flex flex-column  align-items-center mt-5 ">
+        <div class="text-center border border-dark m-5 w-100 bg-dark bg-opacity-50 ">
+        <div class="text-white fs-1 font-monospace" id="Hel">Hello, world!</div>
+        <div class="text-white fs-1  "> Меня зовут Ибрахим</div>
+         </div>
+         <div class="d-flex flex-row justify-content-around w-100 mt-5">
+
+            <div  class="card bg-dark  border-dark" style="width: 18rem;">
+  <img src="./-RGy08kmOrg.jpg" class="card-img-top img-fluid  " alt="...">
+  <div class="card-body   ">
+    <p  class="card-text text-center text-white fs-3 ">Это я</p>
+  </div>
+</div>
+
+<div class="card bg-dark border-dark" style="width: 18rem;">
+  <img src="./gw1FdpmNFLWMlukbfj-BdHnCMSYLFZlHEzN1J4aUDJnrv0KuvASyOUizfBJUwgSn4hJ0-asxw8dvgLQzY1Bv7vnu.jpg" class="card-img-top img-fluid" alt="...">
+  <div class="card-body  ">
+    <p class="card-text text-center text-white fs-3 "> И это я</p>
+  </div>
+</div>
+<div class="card bg-dark border-dark " style="width: 18rem;">
+  <img src="./i.webp" class="card-img-top h-100 img-fluid " alt="...">
+  <div class="card-body">
+    <p class="card-text text-center text-white fs-3"> А это не я</p>
+  </div>
+</div>
+</div>
+<div class="d-flex flex-column align-items-center  ">
+   <video class="w-25 m-5 img-fluid" id="otsilka" poster="https://cdn.akamai.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/silencer.png"  autoplay="" preload="auto" loop="" playsinline=""><source type="video/mp4; codecs=&quot;hvc1&quot;" src="https://cdn.akamai.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/silencer.mov"><source type="video/webm" src="https://cdn.akamai.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/silencer.webm?undefined"><img src="https://cdn.akamai.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/silencer.png" alt="..."></video>
+    <div >
+<button type="button" class="btn btn-primary bg-danger border-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Отсылочка на визиточку
+</button>
+
+<!-- Модальное окно -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">ПОПАЛСЯ</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body ">
+        <div><img class="w-75" src="./i.webp" alt=""></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+        <button type="button" class="btn btn-primary">ОТСЫЛКА</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+</div>
+
+<div class="text-white border border-white m-5 w-100 ">
+       <div class="border border-white text-center fs-3 font-monospace bg-dark" >
+        Не много о себе
+       </div> 
+       <div class="text-center m-2" >
+        <p>🎮 Гейминг – Люблю погружаться в атмосферные RPG и соревновательные шутеры. Ценю качественный геймплей и сюжеты.</p>
+       <p>💨 Кальянная культура – Разбираюсь в табаках, вкусах и атмосфере хороших кальянных. Для меня это способ расслабиться и общаться.</p>
+        <p>
+            🏕️ Активный отдых – Походы, велопрогулки, пейнтбол или просто вылазки на природу. Без движения — не моё!   
+        </p>
+       </div>
+       </div>
+       
+
+    </main>
+    <video style="transform: rotate(180deg);" src="./3176015-hd_1920_1080_25fps.mp4" class="object-fit-cover w-100 h-100 z-n1 position-absolute top-100 " autoplay loop >привет</video> -->
+    <footer class=" d-flex flex-column  align-items-center mt-5  ">
+      <div class="text-white border border-white mt-5 w-100 pb-4 bg-dark">
+        <div class="border border-white text-center fs-3 font-monospace bg-dark ">Связь со мной</div>
+        <div class="text-center mt-3"><a class="link-info link-underline-opacity-0" href="https://t.me/colorchik"><img src="./icons8.svg" alt="">Telegram</a></div> 
+        <div  class="text-center mt-3"><a href="https://vk.com/topchubaev_ibrahim" class="link-underline-opacity-0 link-primary"><img src="./icons8-vk.svg" alt="">Vk</a></div>
+      </div>
+    </footer>
+</body>
+</html>
